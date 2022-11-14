@@ -1,0 +1,336 @@
+h1, h2, h3, h4{
+	margin: .5rem 0;
+}
+
+.width-limit{
+	width: 90%;
+	margin: auto;
+}
+.nav-link { 
+	color: #666;
+	display:inline-block; 
+	padding: 1rem;
+	cursor: pointer;
+	margin: 0 .5rem;
+}
+
+.nav-link:hover:after { transform: scaleX(1); }
+
+
+.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+
+
+button.sign-up {
+    background: #714BFF;
+    border-radius: 6px;
+    box-shadow: 0px 10px 30px -12px rgba(113, 75, 255, 0.5);
+    border: none;
+	margin: 0 .5rem;
+	padding: .5rem 1rem;
+
+
+}
+
+
+
+nav.navbar {
+	background-color: rgb(0, 61, 115);
+	padding: .5rem 0;
+	margin-bottom: 1rem;
+}
+nav.navbar ul{
+	margin: 0;
+	
+}
+
+nav.navbar ul.nav-items{
+	display: flex;
+	padding: 0;
+
+}
+
+nav.navbar ul.nav-items li.nav-item{
+	list-style: none;
+	color: black;
+	padding: .5rem;
+	cursor: pointer;
+}
+
+nav.navbar ul.nav-items li.nav-item a{
+	color: black;
+	text-decoration: none;
+	color: white;
+
+}
+
+/* button.sign-up:hover{ */
+	/* background-color: #6441ea */
+/* } */
+
+
+/* button.login{ */
+	/* background-color: white; */
+	/* color: black; */
+	/* margin: 0 2rem 0 .5rem; */
+	/* padding: .5rem 1rem; */
+
+    /* border-radius: 6px; */
+    /* box-shadow: 0px 10px 30px -12px rgba(164, 164, 164, 6); */
+    /* border: none; */
+ 
+/* } */
+
+/* button.login:hover{ */
+	/* background-color: #6441ea */
+/* } */
+
+
+div.project-section div.text-section{
+	display: flex;
+	align-items: start;
+}
+
+div.project-section div.heading-section{
+	display: flex;
+	align-items: center;
+	min-width: 40%;
+	margin-top: .5rem;
+}
+div.project-section div.text-section div.custom-bullet{
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	margin-left: 2rem;
+	background: red;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+div.project-section div.text-section h1{
+	margin: 0 1rem;
+}
+
+div.project-section div.text-section p {
+	margin-right: 2rem;
+	line-height: 1.5rem;
+}
+
+div.project-section div.image-wrapper{
+	text-align: center;
+	padding: 0 2rem;
+	margin-bottom: 3rem;
+}
+div.project-section div.image-wrapper img{
+	width: 100%;
+	margin: auto;
+	border-radius: 2%;
+	aspect-ratio: 16/8;
+}
+
+div.project-section div.project-link{
+	padding-left: 3rem;
+	
+}
+
+
+div.project-section div.project-link a{
+	font-size: 1.5rem;
+	text-decoration: none;
+	position: relative;
+	z-index: 100;
+}
+
+div.project-section div.project-link span.right-arrow{
+	font-size: 2rem;
+}
+
+
+
+
+div.sidebar{
+	width: 30%;
+	background-color: rgb(0, 61, 115);
+	height: auto;
+	min-height: 100vh;
+	padding: 2rem 0;
+	padding-bottom: 5rem;
+}
+
+div.sidebar *{
+	color: white;
+}
+
+div.sidebar .name-section{
+	padding: 0 1rem;
+	
+}
+div.accordion .skills-item{
+	margin: 0;
+}
+
+div.accordion .accordion-item-heading{
+	cursor: pointer;
+	display: flex;
+	background-color: rgb(0, 49, 92);
+	width: 100%;
+	margin: .5rem 0;
+	padding: .5rem;
+}
+
+div.accordion .accordion-item-heading span.accordion-arrow {
+    
+    text-align: center;
+    
+    margin-left: auto;
+	margin-right: 1rem;
+    transition: transform 1s;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: rgb(0, 61, 115);
+	border-radius: 50%;
+}
+div.accordion .accordion-item-heading h3{
+	margin: 0;
+}
+
+/***********************************************/
+/***********************************************/
+/***********ACCORDIAN STYLING**************/
+/***********************************************/
+/***********************************************/
+
+div.accordion div.accordion-item {
+	overflow: hidden;
+}
+
+div.accordion div.accordion-sub-items{
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+	margin-left: 1rem;
+	margin-right: .5rem;
+}
+
+
+
+
+
+div.resume {
+	display: flex;
+}
+
+div.resume div.main{
+	padding: 1rem;
+}
+
+
+div.resume div.main div.experience{
+	margin-bottom: 3rem;
+}
+
+
+div.resume div.main div.education-item{
+	display: flex;
+}
+
+
+div.resume div.main div.education-item div.education-details{
+	margin: auto;
+	padding: 0 1rem 0 2rem;
+}
+
+
+div.resume div.main div.education-item div.education-details p{
+	font-style: italic;
+	color: gray;
+}
+
+
+
+
+/*********CAROUSEL STYLE************/
+div.carousel{
+	position: relative;
+	margin-bottom: 2rem;;
+}
+div.carousel div.carousel-items{
+	display: flex;
+}
+div.carousel div.carousel-items{
+	/* transition: max-width 2s, max-height 2s; */
+	overflow: hidden; 
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+
+div.carousel div.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	align-items: center;
+}
+div.carousel div.carousel-controls div.carousel-btn-gap{
+	width: 100%;
+	z-index: -100;
+}
+div.carousel div.carousel-controls div.btn-container {
+    display: inherit;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: .5rem;
+    padding-right: .5rem;
+    background: rgb(0, 61, 115, .7);
+    color: white;
+    border-radius: 50%;
+    
+}
+
+div.carousel div.carousel-controls div.next-btn-container{
+	padding-left: .5rem;
+    padding-right: 0;
+}
+
+div.carousel div.carousel-controls button{
+	background: transparent;
+	border: none;
+	font-size: 3rem;
+	width: 1.5rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+div.carousel div.carousel-controls button.next-btn{
+	direction: rtl;
+} 
+
+
+
+div.footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 5rem;
+	background-color: rgb(0, 61, 115);
+	color: white;
+	border: 1px solid black;
+} 
+
+div.footer div.footer-item li{
+	padding: .5rem 0;
+}
+div.footer div.footer-item li a{
+	color: white;
+	text-decoration: none;
+}
+
+div.footer div.footer-item ul.footer-links-list{
+	list-style: none;
+	padding: 0;
+}
